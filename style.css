@@ -31,3 +31,41 @@ overflow-x: hidden;
         transform: translateY(-20px); /* Move up */
       }
     }
+#grid-container{
+  grid-auto-rows: 96px;
+}
+
+.img2 {
+  animation: none;
+}
+@keyframes upDown {
+  0%, 100% {
+      transform: translateY(0);
+    }
+      50% {
+        transform: translateY(-25px); /* Move up */
+      }
+    }
+
+@media (min-width: 1024px) {
+  .img2 {
+    animation: upDown 6s ease-in-out infinite;
+  }
+}
+.box2 {
+  animation: none;
+}
+@keyframes upDown {
+  0%, 100% {
+      transform: translateY(0);
+    }
+      50% {
+        transform: translateY(-10px); /* Move up */
+      }
+    }
+
+@media (min-width: 1024px) {
+  .box2 {
+    animation: upDown 4s ease-in-out infinite;
+  }
+} 
